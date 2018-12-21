@@ -117,14 +117,16 @@ line = ['Hamming Distance: ' num2str(all_perf{1}.map)];
 fprintf('%s\n', line);
 
 
-% figure;
-% hold on;
-% plot(all_perf{3}.recall(1 : 10^3), 'r', 'linewidth', 1.5);
-% plot(all_perf{2}.recall(1 : 10^3), 'c', 'linewidth', 1.5);
-% plot(all_perf{1}.recall(1 : 10^3), 'b', 'linewidth', 1.5);
-% set(gca, 'fontsize', 14);
-% grid on;
-% legend('OAD', 'OSD', 'HM', 'Location', 'NorthWest');
-% xlabel('Number of Retrieved Points');
-% ylabel('Recall');
-%
+figure;
+hold on;
+plot(all_perf{3}.recall(1 : 10^3), 'r', 'linewidth', 1.5);
+plot(all_perf{2}.recall(1 : 10^3), 'c', 'linewidth', 1.5);
+plot(all_perf{1}.recall(1 : 10^3), 'b', 'linewidth', 1.5);
+set(gca, 'fontsize', 14);
+grid on;
+legend('OAD', 'OSD', 'HM', 'Location', 'NorthWest');
+xlabel('Number of Retrieved Points');
+ylabel('Recall');
+
+class(all_cri);
+

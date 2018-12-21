@@ -12,7 +12,7 @@
 #define RESULT_CENTERS plhs[1]
 #define RESULT_ERRORS plhs[2]
 
-
+/*
 template < class T >
 T squared_distance(const T* p1, const T* p2, int num)
 {
@@ -36,7 +36,7 @@ double squared_distance_db(const T1* p1, const T2* p2, int num)
 	}
 	return r;
 }
-
+*/
 template <class T>
 void ComputeHyperCenter(
 	const SMatrix<uchar> &matCodes, 

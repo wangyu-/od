@@ -1,7 +1,10 @@
 #pragma once
+
+#include <string.h>
 #include <string>
 #include "AssertMacro.h"
 #include "Vector.h"
+#include "math_basic.h"
 using namespace std;
 
 //matrix is not large and the data are stored continiously.
